@@ -1,0 +1,197 @@
+/************* COLOR **************/
+/************* FONT **************/
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url(../fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf);
+}
+/*********** GENERAL PARAMETER ************/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#B068E9), to(#6463E7));
+  background: linear-gradient(to bottom, #B068E9, #6463E7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Kumbh Sans, sans-serif;
+  line-height: 18px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 32px;
+  color: #1E1F36;
+  font-weight: 700;
+  font-family: Kumbh Sans, sans-serif;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #4B4C5F;
+  font-family: Kumbh Sans, sans-serif;
+}
+
+.card {
+  width: 920px;
+  min-height: 509px;
+  background: #FFF;
+  border-radius: 23px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  -webkit-box-shadow: 0 50px 50px -20px rgba(53, 18, 122, 0.4784313725);
+          box-shadow: 0 50px 50px -20px rgba(53, 18, 122, 0.4784313725);
+}
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 327px;
+    min-height: 535px;
+    display: block;
+  }
+}
+.card #svg2 {
+  position: absolute;
+  z-index: 5;
+  left: -87px;
+  top: 200px;
+}
+@media screen and (max-width: 1024px) {
+  .card #svg2 {
+    display: none;
+  }
+}
+.card .left-part {
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 1024px) {
+  .card .left-part {
+    overflow: visible;
+  }
+}
+.card .left-part::before {
+  position: absolute;
+  content: "";
+  background: url(../images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  right: 74px;
+  top: -294px;
+  width: 964px;
+  height: 944px;
+}
+@media screen and (max-width: 1024px) {
+  .card .left-part::before {
+    background: url(../images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 145px;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+.card .left-part .img-content #svg1 {
+  position: absolute;
+  right: 74px;
+  top: 71px;
+}
+@media screen and (max-width: 1024px) {
+  .card .left-part .img-content #svg1 {
+    width: 237px;
+    height: 180px;
+    top: -108px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+.card .right-part {
+  padding: 65px 95px 65px 13px;
+}
+@media screen and (max-width: 1024px) {
+  .card .right-part {
+    padding: 132px 24px 0;
+  }
+}
+.card .right-part h1 {
+  margin-bottom: 43px;
+}
+@media screen and (max-width: 1024px) {
+  .card .right-part h1 {
+    text-align: center;
+  }
+}
+.card .right-part .faq-container {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: relative;
+}
+.card .right-part .faq-container::after {
+  position: absolute;
+  content: "";
+  background: #E8E8EA;
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+}
+.card .right-part .faq-container .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card .right-part .faq-container .header-content h3 {
+  cursor: pointer;
+}
+.card .right-part .faq-container .header-content h3:hover {
+  color: #F47B56;
+}
+.card .right-part .faq-container .header-content i {
+  color: #F47B56;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.card .right-part .faq-container p {
+  position: relative;
+  top: -20px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  margin-top: 11px;
+}
+.card .right-part .faq-container.active i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.card .right-part .faq-container.active p {
+  height: auto;
+  opacity: 1;
+  top: 0;
+}
+.card .right-part .faq-container.active h3 {
+  font-weight: bold;
+}/*# sourceMappingURL=index.css.map */

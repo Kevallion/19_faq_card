@@ -1,0 +1,54 @@
+/************* COLOR **************/
+$white1:#FFF;
+$color1:#1E1F36;
+$color2:#4B4C5F;
+$color3:#787887;
+$color4:#E8E8EA;
+$color5: #F47B56;
+
+$gradient1: linear-gradient(to bottom, #B068E9,#6463E7);
+/************* FONT **************/
+
+@font-face {
+    font-family: "Kumbh Sans";
+    src: url(../fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf);
+}
+
+$font1: Kumbh Sans, sans-serif;
+
+/*********** GENERAL PARAMETER ************/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: $gradient1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font1;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 32px;
+    color: $color1;
+    font-weight: 700;
+    font-family: $font1;
+}
+
+h3{
+    font-size: 14px;
+    font-weight: 400;
+    color: $color2;
+    font-family: $font1;
+}
+
+
+
